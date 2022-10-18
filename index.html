@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/flex-box.css" />
+    <title>Flex Box</title>
+  </head>
+
+  <body>
+    <main>
+      <!-- Container props -->
+      <section>
+        <!-- Container/Items -->
+        <div>
+          <h1>Flex-box</h1>
+          <article id="flex-container-items">
+            <div class="flex-box-explain" id="flex-box-container">
+              <h2>Flex container contains the flex items inside of it.</h2>
+              <div class="flex-items-container">
+                <div class="flex-item">1</div>
+                <div class="flex-item">2</div>
+                <div class="flex-item">3</div>
+              </div>
+            </div>
+            <div class="flex-box-explain" id="flex-box-item">
+              <h2>Flex items are contained within the flex container.</h2>
+              <div class="flex-items-container">
+                <div class="flex-item">1</div>
+                <div class="flex-item">2</div>
+                <div class="flex-item">3</div>
+              </div>
+            </div>
+          </article>
+          <hr />
+        </div>
+
+        <!-- Flex direction -->
+        <div>
+          <h1>Flex Container Properties</h1>
+          <h2>Flex-direction:</h2>
+          <article id="flex-direction-container">
+            <div>
+              <h3>Flex-direction: row (default) aligns the flex items in a row.</h3>
+              <div id="flex-direction-row-example" class="flex-items-container">
+                <div class="flex-item">1</div>
+                <div class="flex-item">2</div>
+                <div class="flex-item">3</div>
+              </div>
+            </div>
+            <div>
+              <h3>Flex-direction: column aligns the flex items in a column.</h3>
+              <div
+                id="flex-direction-column-example"
+                class="flex-items-container"
+              >
+                <div class="flex-item">1</div>
+                <div class="flex-item">2</div>
+                <div class="flex-item">3</div>
+              </div>
+            </div>
+          </article>
+          <hr />
+        </div>
+
+        <!-- Flex wrap -->
+        <div>
+          <h2>Flex-wrap:</h2>
+          <h2>
+            Try resizing the screen to see what happens to these flex-items
+          </h2>
+          <article id="flex-wrap-container">
+            <div>
+              <h3>Flex-wrap: wrap orders the flex items in numerical order starting from the lowest number and ending in the highest number, along with placing the items inside of the flex container.</h3>
+              <div id="flex-wrap-wrap-example" class="flex-items-container">
+                <div class="flex-item">1</div>
+                <div class="flex-item">2</div>
+                <div class="flex-item">3</div>
+                <div class="flex-item">4</div>
+                <div class="flex-item">5</div>
+                <div class="flex-item">6</div>
+                <div class="flex-item">7</div>
+              </div>
+            </div>
+            <div>
+              <h3>Flex-wrap: no-wrap still orders the flex items in numerical order from lowest to highest, but the flex items are not contained within the flex container.</h3>
+              <div id="flex-wrap-nowrap-example" class="flex-items-container">
+                <div class="flex-item">1</div>
+                <div class="flex-item">2</div>
+                <div class="flex-item">3</div>
+                <div class="flex-item">4</div>
+                <div class="flex-item">5</div>
+                <div class="flex-item">6</div>
+                <div class="flex-item">7</div>
+              </div>
+            </div>
+            <div>
+              <h3>Flex-wrap: wrap-reverse orders the flex items in order of highest to lowest number, as well as keeping the flex items in the flex container.</h3>
+              <div id="flex-wrap-reverse-example" class="flex-items-container">
+                <div class="flex-item">1</div>
+                <div class="flex-item">2</div>
+                <div class="flex-item">3</div>
+                <div class="flex-item">4</div>
+                <div class="flex-item">5</div>
+                <div class="flex-item">6</div>
+                <div class="flex-item">7</div>
+              </div>
+            </div>
+          </article>
+          <hr />
+        </div>
+        <!-- justify-content -->
+        <div>
+          <h1>Justify-content</h1>
+          <article id="justify-content-container">
+            <!-- center -->
+            <div id="justify-center">
+              <h2>Center aligns the flex items in the center of the flex container.</h2>
+              <div class="flex-items-container">
+                <div class="flex-item">1</div>
+                <div class="flex-item">2</div>
+                <div class="flex-item">3</div>
+              </div>
+            </div>
+            <!-- flex-start -->
+            <div id="flex-start">
+              <h2>Flex-start aligns the flex items at the left side of the flex container(inside the container).</h2>
+              <div class="flex-items-container">
+                <div class="flex-item">1</div>
+                <div class="flex-item">2</div>
+                <div class="flex-item">3</div>
+              </div>
+            </div>
+            <!-- end -->
+            <div id="flex-end">
+              <h2>Flex-end aligns the flex items at the right side of the flex container(inside the container).</h2>
+              <div class="flex-items-container">
+                <div class="flex-item">1</div>
+                <div class="flex-item">2</div>
+                <div class="flex-item">3</div>
+              </div>
+            </div>
+            <!-- space around -->
+            <div id="space-around">
+              <h2>Space-around adds space around the flex items inside of the flex container.</h2>
+              <div class="flex-items-container">
+                <div class="flex-item">1</div>
+                <div class="flex-item">2</div>
+                <div class="flex-item">3</div>
+              </div>
+            </div>
+            <!-- space between -->
+            <div id="space-between">
+              <h2>Space-between adds space between the individual flex items inside of the flex container.</h2>
+              <div class="flex-items-container">
+                <div class="flex-item">1</div>
+                <div class="flex-item">2</div>
+                <div class="flex-item">3</div>
+              </div>
+            </div>
+          </article>
+          <hr />
+        </div>
+        <!-- align-items -->
+        <div>
+          <h1>Align-items</h1>
+          <article id="align-items-container">
+            <!-- center -->
+            <div id="align-center">
+              <h2>Center aligns the flex items in the center of the flex container.</h2>
+              <div class="flex-items-container">
+                <div class="flex-item">1</div>
+                <div class="flex-item">2</div>
+                <div class="flex-item">3</div>
+              </div>
+            </div>
+            <!-- flex-start -->
+            <div id="align-flex-start">
+              <h2>Flex-start aligns the flex items at the top of the flex container(inside the container).</h2>
+              <div class="flex-items-container">
+                <div class="flex-item">1</div>
+                <div class="flex-item">2</div>
+                <div class="flex-item">3</div>
+              </div>
+            </div>
+            <!-- end -->
+            <div id="align-flex-end">
+              <h2>Flex-end aligns the flex items at the bottom of the flex container(inside the container).</h2>
+              <div class="flex-items-container">
+                <div class="flex-item">1</div>
+                <div class="flex-item">2</div>
+                <div class="flex-item">3</div>
+              </div>
+            </div>
+            <!-- stretch -->
+            <div id="align-stretch">
+              <h2>Stretch (default) stretches the flex items to a desired height/width inside of the flex container.</h2>
+              <div class="flex-items-container">
+                <div class="flex-item">1</div>
+                <div class="flex-item">2</div>
+                <div class="flex-item">3</div>
+              </div>
+            </div>
+          </article>
+          <hr />
+        </div>
+      </section>
+      <!-- Item props -->
+      <section>
+        <!-- order -->
+        <div>
+          <h1>Flex Item Properties</h1>
+          <h2>Order:</h2>
+          <article id="flex-order-container">
+            <div>
+              <h3>
+                You can change the order of flex items with the order property
+              </h3>
+              <div id="flex-order-example" class="flex-items-container">
+                <div class="flex-item" style="order: 4">1</div>
+                <div class="flex-item" style="order: 2">2</div>
+                <div class="flex-item" style="order: 3">3</div>
+                <div class="flex-item" style="order: 1">4</div>
+              </div>
+            </div>
+          </article>
+          <hr />
+        </div>
+        <!-- flex-grow -->
+        <div>
+          <h2>Flex-grow:</h2>
+          <article id="flex-grow-container">
+            <div>
+              <h3>
+                Specifies how much a flex item will grow relative to the rest of
+                the flex items
+              </h3>
+              <div id="flex-grow-example" class="flex-items-container">
+                <div class="flex-item" style="flex-grow: 3">1</div>
+                <div class="flex-item">2</div>
+                <div class="flex-item" style="flex-grow: 8">3</div>
+                <div class="flex-item">4</div>
+              </div>
+            </div>
+          </article>
+          <hr />
+        </div>
+        <!-- align-self -->
+        <div>
+          <h2>Align-self:</h2>
+          <article id="flex-align-self-container">
+            <div>
+              <h3>Aligns the flex item along the cross axis</h3>
+              <div id="align-self-example" class="flex-items-container">
+                <div class="flex-item" style="align-self: center">1</div>
+                <div class="flex-item">2</div>
+                <div class="flex-item">3</div>
+              </div>
+            </div>
+          </article>
+          <hr />
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
